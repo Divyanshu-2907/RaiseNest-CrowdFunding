@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RaiseNest - Crowdfunding Platform
 
-## Getting Started
+RaiseNest is a modern crowdfunding platform built with React, Node.js, Next.js, and Razorpay API. It allows users to create fundraising campaigns and receive contributions securely.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- User authentication and profile management
+- Campaign creation and listing
+- Secure payments using Razorpay API
+- Real-time funding progress tracking
+- Responsive UI/UX with modern design
+- Admin dashboard for managing campaigns
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Next.js, Tailwind CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Payment Gateway:** Razorpay API
+- **Authentication:** JWT (JSON Web Tokens)
+
+## 📌 Installation & Setup
+
+### 1. Clone the Repository
+
+```sh
+git clone https://github.com/your-username/raisenest.git
+cd raisenest
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Install Dependencies
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### 3. Setup Environment Variables
 
-## Learn More
+Create a `.env` file in the root directory and add:
 
-To learn more about Next.js, take a look at the following resources:
+```
+MONGO_URI=your_mongodb_connection_string
+RAZORPAY_KEY_ID=your_razorpay_key_id
+RAZORPAY_KEY_SECRET=your_razorpay_key_secret
+JWT_SECRET=your_jwt_secret
+NEXT_PUBLIC_API_URL=http://localhost:5000
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 4. Start the Development Server
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Backend
 
-## Deploy on Vercel
+```sh
+cd server
+npm run dev
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#### Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```sh
+cd client
+npm run dev
+```
+
+The application will run at `http://localhost:3000`
+
+
+
+## 🎨 UI Preview
+![RaiseNest UI](page.png)
+
+🤝 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+## 📩 Contact
+
+For any queries, reach out at dk5506934@gmail.com
+
