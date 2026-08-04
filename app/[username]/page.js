@@ -40,8 +40,12 @@ import User from '@/models/User'
 
 const Username = async ({ params }) => {
   await connectDb();
+  
+  // In Next.js 15+, params is a Promise and needs to be awaited
+  const resolvedParams = await params;
+  const username = resolvedParams.username;
 
-  const user = await User.findOne({ username: params.username });
+  const user = await User.findOne({ username: username });
 
   if (!user) {
     return notFound();
@@ -49,7 +53,7 @@ const Username = async ({ params }) => {
 
   return (
     <>
-      <PaymentPage username={params.username} />
+      <PaymentPage username={username} />
     </>
   );
 };
@@ -57,7 +61,8 @@ const Username = async ({ params }) => {
 export default Username;
 
 export async function generateMetadata({ params }) {
+  const resolvedParams = await params;
   return {
-    title: `Support ${params.username} - Get Me A Funding`,
+    title: `Support ${resolvedParams.username} - RaiseNest`,
   };
 }
