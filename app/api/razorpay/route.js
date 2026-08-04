@@ -8,7 +8,7 @@ import User from "@/models/User";
 export const POST = async (req)=>{
     await connectDB()
     let body = await req.formData() 
-    body = object.fromEntries(body)
+    body = Object.fromEntries(body)
 
     // check if trazorpay order id is present in the server
 
