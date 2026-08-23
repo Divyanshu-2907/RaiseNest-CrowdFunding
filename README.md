@@ -4,9 +4,9 @@
   <h1 align="center">RaiseNest</h1>
 
   <p align="center">
-    <strong>Turn Your Ideas Into Funded Reality.</strong>
+    <strong>Launch Ideas. Build the Future.</strong>
     <br />
-    The premium AI-powered crowdfunding platform designed for students, creators, and next-generation startups.
+    A premium crowdfunding platform that helps student innovators turn ideas into funded reality — and connect with backers globally.
   </p>
 
   <p align="center">
@@ -15,6 +15,7 @@
     <a href="https://github.com/dk5506934/RaiseNest/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" /></a>
     <a href="https://github.com/dk5506934/RaiseNest/stargazers"><img src="https://img.shields.io/badge/stars-5.2k-yellow?style=for-the-badge&logo=github" alt="Stars" /></a>
     <a href="https://github.com/dk5506934/RaiseNest/issues"><img src="https://img.shields.io/badge/issues-0_open-red?style=for-the-badge&logo=github" alt="Issues" /></a>
+    <a href="https://raise-nest-crowd-funding.vercel.app"><img src="https://img.shields.io/badge/live_demo-online-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
   </p>
 
   <p align="center">
@@ -38,10 +39,26 @@
 
 ---
 
+## 📊 Platform at a Glance
+
+<div align="center">
+
+| 🎓 Students | 💰 Raised | 🚀 Campaigns | ✅ Success Rate |
+|:---:|:---:|:---:|:---:|
+| **5,000+** | **₹2.5 Cr** | **850+** | **96%** |
+
+</div>
+
+> *Metrics as showcased on the live platform.*
+
+---
+
 ## 📑 Table of Contents
 
 - [About RaiseNest](#-about-raisenest)
 - [Key Features](#-key-features)
+- [How It Works](#-how-it-works)
+- [Campaign Categories](#-campaign-categories)
 - [Product Walkthrough](#-product-walkthrough)
 - [Screenshots](#-screenshots)
 - [Live Demo](#-live-demo)
@@ -73,7 +90,7 @@
 Traditional crowdfunding platforms are burdened with massive fees, outdated UX, and rigid gatekeeping. Student innovators, indie researchers, and early-stage entrepreneurs often struggle to validate their ideas and raise initial capital in a frictionless environment.
 
 ### Solution
-**RaiseNest** democratizes funding through an open, transparent, and breathtakingly beautiful web platform. By leveraging the latest in Next.js 15 Server Components, Framer Motion, and secure Razorpay integrations, we provide an unparalleled experience for both creators and backers.
+**RaiseNest** democratizes funding through an open, transparent, and breathtakingly beautiful web platform. By leveraging the latest in Next.js 16 Server Components, Framer Motion, and secure Razorpay integrations, we provide an unparalleled experience for both creators and backers.
 
 ### Mission & Vision
 **Mission:** To empower the next generation of builders by removing the financial barriers to innovation.
@@ -93,28 +110,56 @@ Traditional crowdfunding platforms are burdened with massive fees, outdated UX, 
 
 ## ✨ Key Features
 
+### The Four Pillars
+| Pillar | What it means for you |
+|--------|-----------------------|
+| 📊 **Real-time Analytics** | Track funding progress, visitor traffic, and conversion in a live creator dashboard. |
+| 🔒 **Secure Payments** | Bank-grade INR payment processing powered by Razorpay, with UPI support. |
+| 🌍 **Global Reach** | Connect student innovators with backers anywhere in the world. |
+| ⚡ **Instant Withdrawals** | Transparent payouts with **no hidden fees**. |
+
 ### Authentication
 - **Secure OAuth Integration:** Effortless GitHub & Google login via NextAuth.js.
-- **Passwordless Magic Links:** Seamless email authentication flows.
-- **Session Management:** Secure JWT-based stateless sessions.
+- **Session Management:** Secure, stateless JWT-based sessions with built-in CSRF protection.
 
 ### Campaign Management
-- **7-Step Wizard:** An animated, frictionless onboarding flow to launch campaigns.
-- **Rich Media Support:** Embed videos, markdown descriptions, and gallery images.
+- **Guided Creation Wizard:** An animated, frictionless flow for launching a campaign.
+- **Rich Media Support:** Markdown descriptions, gallery images, and embedded media.
 - **Reward Tiers:** Configurable contribution tiers with custom rewards.
 
-### Payments
-- **Razorpay Integration:** Secure, bank-grade payment processing for INR transactions.
-- **Instant Payouts:** Automated webhook processing for transparent fund transfers.
+### Discovery & Experience
+- **Masonry Grid Explore:** A Pinterest-style fluid discovery feed across nine categories.
+- **Success Stories:** Showcase of funded projects and student testimonials.
+- **Simulated AI Insights:** A creator-facing widget that surfaces conversion-optimization suggestions.
+- **Light & Dark Themes:** System-aware theming (dark by default) via `next-themes`.
 
-### Analytics & Dashboard
-- **Creator Dashboard:** Real-time metrics on conversion rates, traffic, and funding.
-- **AI Health Check:** Simulated AI-driven widget offering conversion rate optimizations.
-
-### Performance & Community
-- **Server Components (RSC):** Zero-JS client load for static marketing pages.
-- **Masonry Grid Discovery:** A Pinterest-style fluid explore feed for infinite discovery.
+### Performance & SEO
+- **Server Components (RSC):** Heavy data fetching on the server for a lean client bundle.
+- **Dynamic OG Images:** Auto-generated Open Graph & Twitter cards per route.
 - **SEO Optimized:** Dynamic metadata generation for high search visibility.
+
+---
+
+## 🔄 How It Works
+
+RaiseNest gets a creator from idea to funded in four steps:
+
+```text
+1. Create Campaign  →  2. Verify Identity  →  3. Receive Funding  →  4. Build Your Dream
+```
+
+1. **Create Campaign** — Tell your story, set a goal, and add rewards through the guided wizard.
+2. **Verify Identity** — Secure OAuth sign-in keeps creators and backers trusted.
+3. **Receive Funding** — Backers contribute via Razorpay; funds are tracked in real time.
+4. **Build Your Dream** — Withdraw instantly with no hidden fees and ship your project.
+
+---
+
+## 🗂 Campaign Categories
+
+Discover and launch projects across nine focused verticals:
+
+`Technology` · `AI` · `Robotics` · `Education` · `Healthcare` · `Gaming` · `Environment` · `IoT` · `FinTech`
 
 ---
 
@@ -146,8 +191,9 @@ Traditional crowdfunding platforms are burdened with massive fees, outdated UX, 
 
 ## 🌐 Live Demo
 
-- **Production URL:** [https://raisenest.vercel.app](https://raisenest.vercel.app) *(Coming Soon)*
-- **Staging URL:** [https://staging.raisenest.app](https://staging.raisenest.app)
+- **Production URL:** [https://raise-nest-crowd-funding.vercel.app](https://raise-nest-crowd-funding.vercel.app)
+
+> 🚀 The platform is live! Explore trending campaigns, browse the discovery feed, and experience the full creator dashboard in your browser.
 
 ---
 
@@ -205,9 +251,9 @@ sequenceDiagram
 
 | Technology | Purpose | Version | Why it was chosen |
 |------------|---------|---------|-------------------|
-| **Next.js** | Fullstack Framework | 15.x | Server Components, SEO optimization, and Edge rendering capabilities. |
-| **React** | UI Library | 19.x | Component-based architecture with experimental concurrent features. |
-| **TypeScript** | Type Safety | 5.x | Eliminates runtime errors, enhances IDE autocomplete, and improves maintainability. |
+| **Next.js** | Fullstack Framework | 16.x | Server Components, SEO optimization, and Edge rendering capabilities. |
+| **React** | UI Library | 18.x | Component-based architecture with concurrent rendering features. |
+| **TypeScript** | Type Safety | 5.x | Used across pages and UI components for safer refactors and IDE autocomplete. |
 | **Tailwind CSS** | Styling | 3.4.x | Utility-first styling enabling rapid, responsive, and consistent UI design. |
 | **Framer Motion**| Animations | 11.x | Declarative layout animations, micro-interactions, and fluid transitions. |
 | **MongoDB** | Database | 7.x | Highly scalable NoSQL database perfect for flexible campaign schemas. |
