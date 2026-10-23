@@ -6,50 +6,51 @@
   <p align="center">
     <strong>Launch Ideas. Build the Future.</strong>
     <br />
-    A premium crowdfunding platform that helps student innovators turn ideas into funded reality — and connect with backers globally.
+    A crowdfunding web app for student innovators, built with Next.js, React, Tailwind CSS, NextAuth and Razorpay.
   </p>
 
   <p align="center">
-    <a href="https://github.com/dk5506934/RaiseNest/actions"><img src="https://img.shields.io/badge/build-passing-success?style=for-the-badge&logo=githubactions&logoColor=white" alt="Build Status" /></a>
-    <a href="https://github.com/dk5506934/RaiseNest/releases"><img src="https://img.shields.io/badge/version-v1.0.0-blue?style=for-the-badge" alt="Version" /></a>
-    <a href="https://github.com/dk5506934/RaiseNest/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=for-the-badge" alt="License" /></a>
-    <a href="https://github.com/dk5506934/RaiseNest/stargazers"><img src="https://img.shields.io/badge/stars-5.2k-yellow?style=for-the-badge&logo=github" alt="Stars" /></a>
-    <a href="https://github.com/dk5506934/RaiseNest/issues"><img src="https://img.shields.io/badge/issues-0_open-red?style=for-the-badge&logo=github" alt="Issues" /></a>
-    <a href="https://raise-nest-crowd-funding.vercel.app"><img src="https://img.shields.io/badge/live_demo-online-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
+    <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=nextdotjs" alt="Next.js" />
+    <img src="https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React" />
+    <img src="https://img.shields.io/badge/Tailwind_CSS-3-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+    <img src="https://img.shields.io/badge/Razorpay-test_mode-0C2451?style=for-the-badge&logo=razorpay&logoColor=white" alt="Razorpay" />
+    <a href="https://raise-nest-crowd-funding.vercel.app"><img src="https://img.shields.io/badge/live_demo-vercel-brightgreen?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" /></a>
   </p>
 
   <p align="center">
-    <a href="#live-demo">View Demo</a>
+    <a href="#-live-demo">View Demo</a>
     ·
-    <a href="#getting-started">Get Started</a>
+    <a href="#-getting-started">Get Started</a>
     ·
-    <a href="#documentation-hub">Read the Docs</a>
-    ·
-    <a href="https://github.com/dk5506934/RaiseNest/issues">Report a Bug</a>
+    <a href="https://github.com/Divyanshu-2907/RaiseNest-CrowdFunding/issues">Report a Bug</a>
   </p>
 </div>
 
 ---
 
-## 🎨 Beautiful Project Banner
+> **Portfolio project.** RaiseNest is a personal project, not a live business. The campaigns, creators, backers and platform numbers you see in the UI are **mock data** from `lib/mockData.ts`, used to show how the interface looks with real content. Payments run in Razorpay **test mode**.
+
+---
+
+## 🖼 Preview
 
 <div align="center">
-  <img src="public/landing%20page.png" alt="RaiseNest Dashboard Preview" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);" />
+  <img src="public/landing%20page.png" alt="RaiseNest landing page" style="border-radius: 12px;" />
 </div>
 
 ---
 
-## 📊 Platform at a Glance
+## 📊 Platform at a Glance (Mock Data)
+
+These are sample numbers displayed on the landing page to demo the UI. They are not real usage figures.
 
 <div align="center">
 
 | 🎓 Students | 💰 Raised | 🚀 Campaigns | ✅ Success Rate |
 |:---:|:---:|:---:|:---:|
-| **5,000+** | **₹2.5 Cr** | **850+** | **96%** |
+| 5,000+ *(mock)* | ₹2.5 Cr *(mock)* | 850+ *(mock)* | 96% *(mock)* |
 
 </div>
-
-> *Metrics as showcased on the live platform.*
 
 ---
 
@@ -59,117 +60,77 @@
 - [Key Features](#-key-features)
 - [How It Works](#-how-it-works)
 - [Campaign Categories](#-campaign-categories)
-- [Product Walkthrough](#-product-walkthrough)
 - [Screenshots](#-screenshots)
 - [Live Demo](#-live-demo)
 - [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
 - [Project Structure](#-project-structure)
-- [Documentation Hub](#-documentation-hub)
 - [Getting Started](#-getting-started)
 - [Environment Variables](#-environment-variables)
-- [API Overview](#-api-overview)
-- [Database Schema](#-database-schema)
+- [Data Model](#-data-model)
 - [Design System](#-design-system)
-- [Performance](#-performance)
-- [Security](#-security)
-- [Testing](#-testing)
-- [Deployment](#-deployment)
 - [Roadmap](#-roadmap)
-- [Contributing](#-contributing)
-- [FAQ](#-faq)
-- [Acknowledgements](#-acknowledgements)
 - [Author](#-author)
-- [License](#-license)
 
 ---
 
 ## 📖 About RaiseNest
 
 ### Problem
-Traditional crowdfunding platforms are burdened with massive fees, outdated UX, and rigid gatekeeping. Student innovators, indie researchers, and early-stage entrepreneurs often struggle to validate their ideas and raise initial capital in a frictionless environment.
+Student innovators, indie researchers and early-stage builders often struggle to raise their first bit of money. Most crowdfunding platforms charge high fees and feel heavy to use.
 
-### Solution
-**RaiseNest** democratizes funding through an open, transparent, and breathtakingly beautiful web platform. By leveraging the latest in Next.js 16 Server Components, Framer Motion, and secure Razorpay integrations, we provide an unparalleled experience for both creators and backers.
+### Idea
+RaiseNest is a crowdfunding app where creators set up a page, share it, and receive contributions through Razorpay. I built it to practise a full Next.js App Router project end to end: UI components, theming, animation, OAuth sign-in and payment verification.
 
-### Mission & Vision
-**Mission:** To empower the next generation of builders by removing the financial barriers to innovation.
-**Vision:** To become the defacto Launchpad for university researchers, open-source creators, and indie hardware startups globally.
-
-### Target Users
-- 🎓 **University Students:** Funding thesis projects, hardware prototypes, and collegiate startups.
-- 👨‍💻 **Open Source Developers:** Sustaining independent research and library development.
-- 🚀 **Entrepreneurs:** Validating MVP demand before seeking venture capital.
-
-### Core Values
-- **Frictionless UX:** Design isn't just how it looks; it's how it works.
-- **Transparency:** Zero hidden fees. Direct connection between backers and creators.
-- **Security-First:** Bank-grade encryption and secure OAuth flows.
+### Who it's designed for
+- 🎓 **University students** funding thesis projects, prototypes and campus startups
+- 👨‍💻 **Open-source developers** looking for support for their work
+- 🚀 **Early-stage founders** testing demand for an MVP
 
 ---
 
 ## ✨ Key Features
 
-### The Four Pillars
-| Pillar | What it means for you |
-|--------|-----------------------|
-| 📊 **Real-time Analytics** | Track funding progress, visitor traffic, and conversion in a live creator dashboard. |
-| 🔒 **Secure Payments** | Bank-grade INR payment processing powered by Razorpay, with UPI support. |
-| 🌍 **Global Reach** | Connect student innovators with backers anywhere in the world. |
-| ⚡ **Instant Withdrawals** | Transparent payouts with **no hidden fees**. |
-
 ### Authentication
-- **Secure OAuth Integration:** Effortless GitHub & Google login via NextAuth.js.
-- **Session Management:** Secure, stateless JWT-based sessions with built-in CSRF protection.
+- GitHub and Google sign-in through **NextAuth.js**
+- Session handling and CSRF protection provided by NextAuth
 
-### Campaign Management
-- **Guided Creation Wizard:** An animated, frictionless flow for launching a campaign.
-- **Rich Media Support:** Markdown descriptions, gallery images, and embedded media.
-- **Reward Tiers:** Configurable contribution tiers with custom rewards.
+### Payments
+- **Razorpay** checkout for INR contributions (test mode)
+- Every payment's signature is verified on the server (`app/api/razorpay/route.js`) before it is marked as done in MongoDB
 
-### Discovery & Experience
-- **Masonry Grid Explore:** A Pinterest-style fluid discovery feed across nine categories.
-- **Success Stories:** Showcase of funded projects and student testimonials.
-- **Simulated AI Insights:** A creator-facing widget that surfaces conversion-optimization suggestions.
-- **Light & Dark Themes:** System-aware theming (dark by default) via `next-themes`.
+### UI and Experience
+- Landing page with an animated hero, live-style funding card and donation feed (mock data)
+- Explore page for browsing campaigns by category (mock data)
+- Creator profile and payment page at `/[username]`
+- Creator dashboard, campaign creation page, success stories, about, login and custom 404 pages
+- Reusable UI components (`Button`, `Card`, `Input`, `Badge`, `Avatar`) built with Tailwind CSS and CVA
+- Light and dark themes (dark by default) via `next-themes`
+- Animations with **Framer Motion**, toast messages with React Toastify, confetti on success
+- Responsive layouts for mobile, tablet and desktop
 
-### Performance & SEO
-- **Server Components (RSC):** Heavy data fetching on the server for a lean client bundle.
-- **Dynamic OG Images:** Auto-generated Open Graph & Twitter cards per route.
-- **SEO Optimized:** Dynamic metadata generation for high search visibility.
+### SEO
+- Generated favicon, Apple icon and Open Graph / Twitter images through Next.js route files
+- Route-level `loading.tsx` for instant loading states
 
 ---
 
 ## 🔄 How It Works
 
-RaiseNest gets a creator from idea to funded in four steps:
-
 ```text
-1. Create Campaign  →  2. Verify Identity  →  3. Receive Funding  →  4. Build Your Dream
+1. Sign in  →  2. Set up your page  →  3. Share it  →  4. Receive contributions
 ```
 
-1. **Create Campaign** — Tell your story, set a goal, and add rewards through the guided wizard.
-2. **Verify Identity** — Secure OAuth sign-in keeps creators and backers trusted.
-3. **Receive Funding** — Backers contribute via Razorpay; funds are tracked in real time.
-4. **Build Your Dream** — Withdraw instantly with no hidden fees and ship your project.
+1. **Sign in** with GitHub or Google.
+2. **Set up your page** with your story and Razorpay details.
+3. **Share it** with friends, classmates and backers.
+4. **Receive contributions** through Razorpay. Each payment is verified before it is recorded.
 
 ---
 
 ## 🗂 Campaign Categories
 
-Discover and launch projects across nine focused verticals:
-
 `Technology` · `AI` · `Robotics` · `Education` · `Healthcare` · `Gaming` · `Environment` · `IoT` · `FinTech`
-
----
-
-## 🚶 Product Walkthrough
-
-1. **Landing Page:** A gorgeous, glassmorphism-inspired entry point showcasing trending campaigns, live platform metrics, and a dynamic hero section.
-2. **Explore:** An intuitive discovery engine allowing users to filter campaigns by categories like *Robotics*, *AI*, and *FinTech*.
-3. **Campaign Page:** A high-fidelity individual project view featuring a dynamic blur background, funding progress bars, and reward tier selection.
-4. **Creator Dashboard:** The control center for innovators to track active backers, monitor revenue, and adjust payout settings safely.
-5. **Campaign Creation:** A step-by-step interactive wizard ensuring creators provide compelling stories and accurate funding goals before launching.
 
 ---
 
@@ -191,118 +152,100 @@ Discover and launch projects across nine focused verticals:
 
 ## 🌐 Live Demo
 
-- **Production URL:** [https://raise-nest-crowd-funding.vercel.app](https://raise-nest-crowd-funding.vercel.app)
+**[raise-nest-crowd-funding.vercel.app](https://raise-nest-crowd-funding.vercel.app)**
 
-> 🚀 The platform is live! Explore trending campaigns, browse the discovery feed, and experience the full creator dashboard in your browser.
+The demo shows mock campaigns and stats. Payments use Razorpay test mode, so no real money moves.
 
 ---
 
 ## 🏗 Architecture
 
-RaiseNest utilizes a modern decoupled architecture built entirely on the Next.js App Router paradigm, blurring the lines between client and server for optimal performance.
-
-### Application Architecture
-
 ```mermaid
 graph TD
-    Client[Client Browser / Mobile] --> |HTTPS| CDN[Vercel Edge Network]
-    CDN --> NextJS[Next.js 15 App Router]
-    
-    subgraph Frontend [React Server Components]
-        NextJS --> |RSC| Pages
-        NextJS --> |Client Components| UI[Tailwind + Framer Motion]
+    Client[Browser] --> |HTTPS| Vercel[Vercel]
+    Vercel --> NextJS[Next.js App Router]
+
+    subgraph Frontend
+        NextJS --> Pages[Pages and Layouts]
+        NextJS --> UI[Tailwind + Framer Motion components]
     end
-    
-    subgraph Backend [Server Actions & API Routes]
-        NextJS --> |Server Actions| Auth[NextAuth.js]
-        NextJS --> |API Routes| Payments[Razorpay Webhooks]
-        NextJS --> |Mongoose| DB[(MongoDB Atlas)]
+
+    subgraph Backend
+        NextJS --> |Server Actions| Actions[actions/useractions.js]
+        NextJS --> |API Route| Auth[NextAuth.js]
+        NextJS --> |API Route| Verify[Razorpay payment verification]
+        Actions --> |Mongoose| DB[(MongoDB)]
+        Verify --> DB
     end
-    
+
     Auth --> |OAuth| Providers(GitHub / Google)
-    Payments --> |Checkout| RazorpayAPI(Razorpay)
+    Verify --> RazorpayAPI(Razorpay)
 ```
 
-### Authentication Flow
+### Payment Flow
 
 ```mermaid
 sequenceDiagram
-    participant User
-    participant Client as Next.js Client
-    participant Server as NextAuth API
+    participant Backer
+    participant App as Next.js App
+    participant RZP as Razorpay
     participant DB as MongoDB
-    participant OAuth as Provider (GitHub)
 
-    User->>Client: Clicks "Continue with GitHub"
-    Client->>Server: Initiates OAuth Flow
-    Server->>OAuth: Redirect to Provider
-    OAuth-->>User: Prompts for Authorization
-    User->>OAuth: Approves Access
-    OAuth-->>Server: Returns Auth Token
-    Server->>DB: Upsert User Record
-    DB-->>Server: Returns User Profile
-    Server-->>Client: Sets Secure HttpOnly JWT
-    Client-->>User: Redirects to Dashboard
+    Backer->>App: Clicks "Pay"
+    App->>RZP: Creates order (Server Action)
+    App->>DB: Saves pending payment
+    RZP-->>Backer: Opens checkout
+    Backer->>RZP: Completes payment
+    RZP->>App: Sends order id, payment id, signature
+    App->>App: Verifies signature with key secret
+    App->>DB: Marks payment as done
+    App-->>Backer: Redirects to creator page
 ```
 
 ---
 
 ## 🛠 Tech Stack
 
-| Technology | Purpose | Version | Why it was chosen |
-|------------|---------|---------|-------------------|
-| **Next.js** | Fullstack Framework | 16.x | Server Components, SEO optimization, and Edge rendering capabilities. |
-| **React** | UI Library | 18.x | Component-based architecture with concurrent rendering features. |
-| **TypeScript** | Type Safety | 5.x | Used across pages and UI components for safer refactors and IDE autocomplete. |
-| **Tailwind CSS** | Styling | 3.4.x | Utility-first styling enabling rapid, responsive, and consistent UI design. |
-| **Framer Motion**| Animations | 11.x | Declarative layout animations, micro-interactions, and fluid transitions. |
-| **MongoDB** | Database | 7.x | Highly scalable NoSQL database perfect for flexible campaign schemas. |
-| **Mongoose** | ODM | 8.x | Schema validation and simplified query building. |
-| **NextAuth** | Authentication | 4.x | Secure, battle-tested OAuth integration for Next.js. |
-| **Razorpay** | Payment Gateway | 2.x | India's leading payment processor with robust webhook support. |
+| Technology | Purpose |
+|------------|---------|
+| **Next.js 16** (App Router) | Framework, routing, server actions, API routes |
+| **React 18** | UI components |
+| **TypeScript / JavaScript** | Pages and components |
+| **Tailwind CSS** | Styling and responsive layout |
+| **Framer Motion** | Animations and transitions |
+| **Radix Slot + CVA** | Reusable component variants |
+| **next-themes** | Light and dark mode |
+| **NextAuth.js** | GitHub and Google OAuth |
+| **MongoDB + Mongoose** | Users and payments |
+| **Razorpay** | Payment checkout and verification |
 
 ---
 
 ## 📁 Project Structure
 
-RaiseNest adheres to a highly organized, domain-driven structure optimized for Next.js App Router.
-
 ```text
-raisenest/
-├── actions/              # Next.js Server Actions for database mutations
-├── app/                  # Next.js App Router (Pages, Layouts, APIs)
-│   ├── (auth)/           # Authentication grouping (login, register)
-│   ├── [username]/       # Dynamic user profile and payment pages
-│   ├── api/              # API Routes (webhooks, auth endpoints)
-│   ├── campaigns/        # Campaign management and wizard
-│   ├── dashboard/        # Creator dashboard and analytics
-│   ├── explore/          # Masonry grid discovery page
-│   └── globals.css       # Global Tailwind directives
-├── components/           # React Components
-│   ├── ui/               # Reusable atomic UI components (Buttons, Cards, Inputs)
-│   ├── Dashboard.tsx     # Complex domain-specific components
-│   └── PaymentPage.tsx   # Complex domain-specific components
-├── db/                   # Database connection utilities
-├── lib/                  # Helper functions and constants (mockData.ts, utils.ts)
-├── models/               # Mongoose database schemas (User, Payment)
-├── public/               # Static assets (images, fonts, favicons)
-└── next.config.mjs       # Next.js configuration and image domains
+RaiseNest-CrowdFunding/
+├── actions/              # Server Actions (payments, user profile)
+├── app/
+│   ├── [username]/       # Creator profile and payment page
+│   ├── api/
+│   │   ├── auth/         # NextAuth route
+│   │   └── razorpay/     # Payment verification route
+│   ├── campaigns/create/ # Campaign creation page
+│   ├── dashboard/        # Creator dashboard
+│   ├── explore/          # Campaign discovery
+│   ├── login/            # Sign-in page
+│   └── ...               # About, categories, success stories, 404
+├── components/
+│   ├── ui/               # Reusable UI components
+│   ├── hero/             # Landing page hero pieces
+│   ├── Dashboard.tsx
+│   └── PaymentPage.tsx
+├── db/                   # MongoDB connection
+├── lib/                  # mockData.ts, utils.ts
+├── models/               # User and Payment schemas
+└── public/               # Images and screenshots
 ```
-
----
-
-## 📚 Documentation Hub
-
-This `README.md` serves as the entry point to our extensive documentation ecosystem. 
-Explore the links below to dive deeper into specific architectural decisions.
-
-### Core Documents
-- [README.md](./README.md) - Project overview and quick start (You are here).
-- [ARCHITECTURE.md](#) *(Coming Soon)* - Deep dive into Server Components vs Client Components.
-- [API.md](#) *(Coming Soon)* - Detailed endpoint specifications and Webhook payloads.
-- [ROADMAP.md](#-roadmap) - Future vision and upcoming AI features.
-- [CONTRIBUTING.md](#-contributing) - Guidelines for open-source contributors.
-- [SECURITY.md](#-security) - Threat models, encryption details, and vulnerability reporting.
 
 ---
 
@@ -310,210 +253,76 @@ Explore the links below to dive deeper into specific architectural decisions.
 
 ### Prerequisites
 - Node.js 18.17+
-- npm, yarn, or pnpm
-- MongoDB Atlas Account (or local instance)
-- Razorpay Account (for testing payments)
-- GitHub OAuth App (for authentication)
+- A MongoDB database (Atlas or local)
+- A Razorpay account in test mode
+- A GitHub OAuth app
 
-### 1. Clone the repository
-```bash
-git clone https://github.com/dk5506934/RaiseNest.git
-cd raisenest
-```
+### Setup
 
-### 2. Install dependencies
 ```bash
+git clone https://github.com/Divyanshu-2907/RaiseNest-CrowdFunding.git
+cd RaiseNest-CrowdFunding
 npm install
 ```
 
-### 3. Setup Environment Variables
-Create a `.env.local` file in the root directory.
-```bash
-cp .env.example .env.local
-```
+Create a `.env.local` file in the root with the variables below, then run:
 
-### 4. Run the Development Server
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+Open [http://localhost:3000](http://localhost:3000).
 
 ---
 
 ## 🔐 Environment Variables
 
-| Variable | Description | Required | Example |
-|----------|-------------|:--------:|---------|
-| `NEXT_PUBLIC_URL` | Application base URL | Yes | `http://localhost:3000` |
-| `MONGODB_URI` | MongoDB connection string | Yes | `mongodb+srv://user:pass@cluster...` |
-| `NEXTAUTH_URL` | Auth callback URL | Yes | `http://localhost:3000` |
-| `NEXTAUTH_SECRET` | Secret for JWT encryption | Yes | `super_secret_string_32_chars` |
-| `GITHUB_ID` | GitHub OAuth App ID | Yes | `Iv1.xxxxxxxxxxxx` |
-| `GITHUB_SECRET` | GitHub OAuth App Secret | Yes | `a1b2c3d4e5f6g7h8...` |
-| `NEXT_PUBLIC_KEY_ID` | Razorpay Public Key | Yes | `rzp_test_xxxxxx` |
-| `KEY_SECRET` | Razorpay Secret Key | Yes | `abcdefghijklmnop...` |
+| Variable | Description |
+|----------|-------------|
+| `NEXT_PUBLIC_URL` | App base URL, e.g. `http://localhost:3000` |
+| `MONGODB_URI` | MongoDB connection string |
+| `NEXTAUTH_URL` | Auth callback URL |
+| `NEXTAUTH_SECRET` | Secret used to sign sessions |
+| `GITHUB_ID` | GitHub OAuth client ID |
+| `GITHUB_SECRET` | GitHub OAuth client secret |
+| `NEXT_PUBLIC_KEY_ID` | Razorpay key ID (test) |
+| `KEY_SECRET` | Razorpay key secret (test) |
 
 ---
 
-## 🗄 Database Schema
+## 🗄 Data Model
 
-RaiseNest uses MongoDB with normalized references to ensure data integrity while maintaining high read performance.
+Two Mongoose models live in `models/`:
 
-### Collections Overview
-- **Users:** Stores authentication data, profile information, and Razorpay payout credentials.
-- **Campaigns:** Contains campaign metadata, funding goals, categories, and rich descriptions.
-- **Payments:** Records successful Razorpay transactions, associated backer metadata, and references to the target campaign.
+- **User:** profile details, username and the creator's Razorpay keys
+- **Payment:** amount, sender, receiving creator, Razorpay order id and whether it is done
 
-```mermaid
-erDiagram
-    USER ||--o{ CAMPAIGN : creates
-    USER ||--o{ PAYMENT : makes
-    CAMPAIGN ||--o{ PAYMENT : receives
-    USER {
-        string _id PK
-        string email
-        string name
-        string username
-        string razorpayid
-    }
-    CAMPAIGN {
-        string _id PK
-        string title
-        string description
-        number goal
-        string creator_id FK
-    }
-    PAYMENT {
-        string _id PK
-        number amount
-        string status
-        string donor_id FK
-        string campaign_id FK
-    }
-```
+Campaign listings on the Explore and landing pages come from `lib/mockData.ts` for now.
 
 ---
 
 ## 🎨 Design System
 
-RaiseNest features a meticulously crafted design system utilizing **Tailwind CSS** and **Radix UI** primitives.
-
-- **Typography:** Uses modern sans-serif fonts (`Inter` or `Geist`) for maximum legibility.
-- **Color Palette:** A dark-mode optimized palette featuring deep slate backgrounds, vibrant primary blue (`#2563EB`), and neon success indicators.
-- **Glassmorphism:** Extensive use of `backdrop-blur-md` and `bg-white/5` for premium depth and floating elements.
-- **Components:** Fully abstracted UI components (`Button`, `Card`, `Input`, `Avatar`) built with `class-variance-authority` (CVA) for strict variant enforcement.
-- **Animations:** Fluid entry animations and micro-interactions powered by `framer-motion` (spring transitions, layout morphing).
-
----
-
-## ⚡ Performance
-
-Engineered for blazing fast loads and perfect Core Web Vitals.
-
-- **React Server Components (RSC):** Heavy data fetching is pushed to the server, reducing the client JS bundle significantly.
-- **Next/Image Optimization:** Automatic WebP conversion, resizing, and layout shifting prevention.
-- **Granular Loading States:** Integration of `loading.tsx` boundaries for instant perceived navigation.
-- **Dynamic Imports:** Heavy libraries (like Canvas Confetti) are lazy-loaded via `next/dynamic`.
-
----
-
-## 🛡 Security
-
-- **Authentication:** Stateless JWT sessions managed entirely by NextAuth.
-- **CSRF Protection:** Built-in Cross-Site Request Forgery protection via NextAuth.
-- **Input Validation:** Server Actions stringently sanitize inputs before executing Mongoose queries.
-- **Payment Verification:** Razorpay webhooks are cryptographically verified using SHA256 HMAC signatures before database insertion.
-
----
-
-## 🧪 Testing
-
-*(Documentation for testing framework integration is pending. Planned implementation includes:)*
-- **Unit Testing:** Vitest for utility functions and hooks.
-- **Component Testing:** React Testing Library for isolated UI components.
-- **E2E Testing:** Playwright for critical user journeys (Auth -> Campaign Creation -> Payment).
-
----
-
-## 🚢 Deployment
-
-RaiseNest is optimized for frictionless deployment on Vercel.
-
-### Deploying to Vercel
-1. Push your code to a GitHub repository.
-2. Import the project into Vercel.
-3. Configure the Environment Variables in the Vercel dashboard.
-4. Click Deploy. Vercel will automatically detect Next.js and apply the optimal build settings.
+- **Fonts:** Geist Sans and Geist Mono
+- **Colors:** dark slate backgrounds with a primary blue (`#2563EB`)
+- **Glass effects:** `backdrop-blur` and translucent backgrounds on floating cards
+- **Components:** `Button`, `Card`, `Input`, `Badge` and `Avatar` with variants managed by CVA
+- **Motion:** entry animations and hover effects with Framer Motion
 
 ---
 
 ## 🗺 Roadmap
 
-- [x] NextAuth GitHub Integration
-- [x] Next.js 15 App Router Migration
-- [x] Glassmorphism Design System Overhaul
-- [x] Razorpay Integration & Webhooks
-- [x] Creator Dashboard
-- [ ] **[In Progress]** AI-Powered Campaign Copywriter Assistant
-- [ ] **[Planned]** Stripe Integration for International Backers
-- [ ] **[Planned]** Web3 Crypto Wallet Connections (Ethereum/Solana)
-- [ ] **[Planned]** Real-time Chat between Creators and Backers
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from open-source developers!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please ensure your code passes ESLint checks and adheres to the existing Tailwind stylistic guidelines.
-
----
-
-## ❓ FAQ
-
-**Q: Can I use this for a real startup?**  
-A: Yes! The codebase is highly modular and utilizes production-grade authentication and payment gateways. However, ensure you thoroughly audit the security configurations before handling real money.
-
-**Q: Why Razorpay and not Stripe?**  
-A: Razorpay was selected for optimal processing of INR (Indian Rupee) transactions and UPI compatibility, making it ideal for the Indian student demographic.
-
----
-
-## 🙌 Acknowledgements
-
-- [Next.js](https://nextjs.org/) for the incredible framework.
-- [shadcn/ui](https://ui.shadcn.com/) for design inspiration and component architecture.
-- [Framer Motion](https://www.framer.com/motion/) for bringing the UI to life.
-- [Lucide](https://lucide.dev/) for beautiful open-source icons.
+- [x] GitHub sign-in with NextAuth
+- [x] Razorpay checkout and payment verification
+- [x] Creator dashboard
+- [x] Light and dark themes
+- [ ] Store campaigns in MongoDB instead of mock data
+- [ ] Tests with Vitest and React Testing Library
+- [ ] AI helper for writing campaign descriptions
 
 ---
 
 ## 👨‍💻 Author
 
-<div style="display: flex; align-items: center; gap: 20px;">
-  <a href="https://github.com/Divyanshu-2907">
-    <img src="https://github.com/Divyanshu-2907.png" width="100" height="100" style="border-radius: 50%;" alt="Divyanshu" />
-  </a>
-  <div>
-    <strong>Divyanshu</strong><br/>
-    <em>Creator of RaiseNest</em><br/>
-    <a href="https://github.com/Divyanshu-2907">GitHub</a>
-  </div>
-</div>
-
----
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
----
-<div align="center">
-  <p>Built with ❤️ by innovators, for innovators.</p>
-</div>
+**Divyanshu Kumar** · [GitHub](https://github.com/Divyanshu-2907) · [LinkedIn](https://linkedin.com/in/divyanshukr004)
